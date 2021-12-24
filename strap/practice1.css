@@ -11,12 +11,28 @@ samp {
 
 }
 
-.framework-card {
+.framework-card, .info-card {
   border: 1px solid lightgrey;
   padding: 5px;
   margin-left: 16px;
   margin-right: 10px;
   margin-bottom: 5px;
+}
+
+.info-card {
+  margin-left: 30px;
+}
+
+.info-card h3 {
+  font-size: calc(1.3rem + .4vw);
+}
+
+.info-example {
+  border: 1px solid lightgrey;
+}
+
+.info-example h3 {
+  font-size: calc(1.1rem + .2vw);
 }
 
 
