@@ -11,7 +11,16 @@ samp {
 
 }
 
+.framework-card {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  margin-left: 16px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
 
+
+/*```````````````````````````` navbar```````````````````````````*/
 .navbar {
   padding: 10px 15px 10px 15px;      /* was too smushed to the bezzle*/
 }
