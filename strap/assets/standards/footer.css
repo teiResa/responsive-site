@@ -54,6 +54,11 @@ ul li a:hover {
 
 .icon-footer {
   padding-right: 20px;
+  font-size: 1.15em;
+}
+
+icon-signature {
+  padding-right: 2px;
 }
 
 .footer .copyright {
