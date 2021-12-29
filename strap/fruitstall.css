@@ -1,6 +1,23 @@
-html {
-  background-image: image(/assets/bg-happy.jpg);
-  background-image: url();
-  background: lightyellow;
+.navbar {
+  padding: 10px 15px 10px 15px;      /* was too smushed to the bezzle*/
+}
+
+.navbar-collapse {
+  justify-content: flex-end;  /* not sure why, but it wasn't moving to the right (the horizontal navbar) */
+ }
+
+.navbar-light::before {
+  /*Everything in here was to get the background to fade without effecting anything else.*/
+  content: "";
+  background-image: url(https://teiresa.github.io/responsive-site/strap/assets/bg-happy.jpg);
+  opacity: .2;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
 
 }
