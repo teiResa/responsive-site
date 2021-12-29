@@ -1,0 +1,118 @@
+
+.footer h2 {
+  color: #311b92;
+}
+
+.footer {
+  background: #d1c4e9;
+  color: #0000008C;
+
+}
+
+.footer .pr-5 {
+  color: #0000008C;
+}
+
+.footer .links ul {
+  list-style-type: none;
+}
+
+.footer .links:hover {
+  text-decoration:none ;
+  color: green;
+}
+
+.footer ul li a{
+  color: #0000008C;
+  transition: color .1s;
+}
+
+ul li a:hover {
+    text-decoration:none;
+    color:green;
+}
+
+
+.footer .about-company i{
+  font-size: 27px;
+  color:#7e57c2;
+}
+
+.footer .about-company a{
+  /* The icons */
+  color:red;
+  transition: color .2s;
+
+}
+.footer .about-company i:hover {
+  color:green;
+}
+
+.footer p i {
+  margin-right: 10px;
+}
+
+.icon-footer {
+  padding-right: 20px;
+}
+
+.footer .copyright {
+
+}
+______________
+
+________________________________________
+______________________________________________________
+
+
+/*
+
+
+
+
+  .links{
+    ul {list-style-type: none;}
+
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+
+  }
+
+  h2 {
+    color:pink;
+  }
+
+  .footer .links {
+    color: red;
+  }
+  ul {list-style-type:;}
+
+  ul li a{
+    color: white;
+    transition: color .2s;
+  }
+
+  ul li a:hover {
+
+      text-decoration:none;
+      color:pink;
+
+  }
+
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  }
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+}
+
+*/
