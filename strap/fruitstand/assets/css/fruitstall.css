@@ -56,13 +56,15 @@
   padding-left: 3px;
   padding-right: 5px;
 
-
+  min-width: 50px;
+  min-height: 30px;
 }
 
 .navbar button i{
   font-size: 1.5em;
   width:40px;
   opacity: 1;
+  align-self: flex-end;
 
 
 }
