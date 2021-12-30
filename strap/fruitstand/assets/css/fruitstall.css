@@ -50,7 +50,7 @@
 .navbar-light::before {
   /*Everything in here was to get the background to fade without effecting anything else.*/
   content: "";
-  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/bg-happy.jpg);
+  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
   opacity: .2;
   position:absolute;
   top:0;
@@ -66,7 +66,7 @@
 main::before {
   /*Everything in here was to get the background to fade without effecting anything else.*/
   content: "";
-  background-image: url(https://teiresa.github.io/responsive-site/strap/assets/bg-happy.jpg);
+  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/img/assets/bg-happy.jpg);
   background-repeat: repeat;
   opacity: .1;
   position:absolute;
