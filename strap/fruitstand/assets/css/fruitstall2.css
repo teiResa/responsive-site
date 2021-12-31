@@ -1,0 +1,84 @@
+.navbar {
+  padding: 10px 15px 10px 15px;      /* was too smushed to the bezzle*/
+  min-width: 110px;
+}
+
+.navbar-nav {justify-content: flex-end;}
+
+
+.navbar-image {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar img {
+  width: 80px;
+  margin:5px;
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-around
+}
+
+.navbar-brand a {
+
+}
+
+.navbar-icons {
+  flex-direction: row;
+  font-size: 30px;
+  flex-wrap: nowrap;
+}
+
+.navbar button i{
+  font-size: 1.5em;
+}
+
+
+
+.navbar-icons ul {
+  list-style: none;
+  flex-direction: row;
+
+}
+
+.navbar-collapse {
+  justify-content: flex-end;  /* not sure why, but it wasn't moving to the right (the horizontal navbar) */
+ }
+
+.navbar-light::before {
+  /*Everything in here was to get the background to fade without effecting anything else.*/
+  content: "";
+  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
+  opacity: .2;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+
+}
+
+main::before {
+  /*Everything in here was to get the background to fade without effecting anything else.*/
+  content: "";
+  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
+  background-repeat: repeat;
+  opacity: .1;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  width:auto;
+  height:auto;
+  z-index:-3;
+}
+
+main {
+  height: 90vh;
+}
