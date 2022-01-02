@@ -14,20 +14,11 @@ main {
   margin-top: 140px;
 }
 
-.bg-override::before {
-    /*Everything in here was to get the background to fade without effecting anything else.*/
-    content: "";
-    background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
-    opacity: .1;
-    background-repeat: repeat;
-    position:absolute;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    width:auto;
-    height:auto;
-    z-index:-5;
 
+/* each page gets this block in the style tag in the head tag. Until I get a clue, this will have to be trial-and-errored for the right size.
 
+main::before {
+  height:500vh;
 }
+
+*/

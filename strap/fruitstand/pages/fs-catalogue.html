@@ -28,6 +28,14 @@
 
   </head>
   <body>
+    <style media="screen">
+
+      /* Make the background image cover the whole area. */
+    main::before {
+      height:300vh;
+    }
+
+    </style>
 
     <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
         <div class="navbar-image col-3">                        <!-- Brand Logo -->
@@ -78,7 +86,7 @@
 
     <section class="jumbotron text-center">
       <div class="container">
-        <h1 class="jumbotron-heading">Our Fruit Selection</h1>
+        <h1 class="jumbotron-heading page-heading">Our Fruit Selection</h1>
         <p class="lead text-muted">At Tei's Fruit Stall we offer three systems of ordering.<br> You may order individual items, a variety box, or a gift basket.
         <br> Our fine produce is also available with the Friendly Farms Cooperative's <a href="#" class="btn-inverse"> Friendly Farm Box. </a></p>
         <p>
@@ -88,6 +96,8 @@
         </p>
       </div>
     </section>
+
+
 
     <div class="album py-5 bg-light bg-override">
       <div class="container">
@@ -181,19 +191,23 @@
           </div>
           <div class="modal-body">
                     <form>
-                      <div class="form-group row">
-                        <label class="col-sm-4 col-form-label" for="email"> Email Address</label>
-                        <div class="col-sm-8">
-                            <input placeholder="example@fruitfans.com" type="text" class="form-control" id="email">
-                        </div>
+
+                      <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                        <label for="inputEmail">Email address</label>
                       </div>
-                      <div class="form-group row">
-                        <label class="col-sm-4 col-form-label" for="password"> Password</label>
-                        <div class="col-sm-8">
-                            <input type="password" class="form-control" id="password">
-                            <samp><a href="#" class="modal-forgotten-pass">I forget my password.</a></samp>
-                        </div>
+
+                      <samp><a href="#" class="modal-forgotten-pass">I forget my password.</a></samp>
+
+                      <div class="form-label-group">
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                        <label for="inputPassword">Password</label>
                       </div>
+
+                  <!-- I forewent the remember me checkbox. It's redundant. If the user
+                  wanted their password saved, they probably use the browser's password
+                  directory. That or a password thing like NordPass. -->
+
 
                       <div class="row ">
                         <div class="col-sm-8 offset-sm-4">
