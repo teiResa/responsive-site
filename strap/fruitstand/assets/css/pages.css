@@ -6,6 +6,12 @@
     background-color: #e9ecef00;
 }
 
+.card {
+  background-color: mintcream;
+  background-color: #D5ede6;
+ <!-- #FBFAF5fc -->
+}
+
 .bg-override {
     background-color: #e9ecef00 !important;
 }
