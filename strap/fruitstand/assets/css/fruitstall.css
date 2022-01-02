@@ -114,7 +114,7 @@
   left:0;
   width:auto;
   height:auto;
-  z-index:-3;
+  z-index:-5;
 
 }
 
@@ -131,11 +131,11 @@ main::before {
   left:0;
   width:auto;
   height:auto;
-  z-index:-3;
+  z-index:-5;
 }
 
 main {
-  height: 300vh;
+  min-height: 200vh;
 }
 
 a:hover {
