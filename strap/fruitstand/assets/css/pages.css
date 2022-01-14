@@ -20,6 +20,20 @@ main {
   margin-top: 140px;
 }
 
+.lead {
+  
+}
+
+.specials-placeholder, .reorder-placeholder {
+  height: 55vh;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+button .login-placeholder {
+  left: 45%;
+}
+
 
 /* each page gets this block in the style tag in the head tag. Until I get a clue, this will have to be trial-and-errored for the right size.
 
