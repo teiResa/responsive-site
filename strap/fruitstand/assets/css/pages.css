@@ -42,3 +42,14 @@ main::before {
 }
 
 */
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ main background fixes ~~~~~~~~~~~~~~~~~~~~~*/
+
+.main-special:before {
+  height:100vh !important;
+}
+
+.main-seasonal:before {
+  height: 200vh !important;
+}
