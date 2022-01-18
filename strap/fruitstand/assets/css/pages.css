@@ -53,3 +53,7 @@ main::before {
 .main-seasonal:before {
   height: 200vh !important;
 }
+
+.main-reorder:before {
+  height: 100vh !important;
+}
