@@ -11301,6 +11301,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   margin-left: 0;
 }
 
+.sidebar-heading-link {
+  text-decoration: none;
+  color:darkslategray;
+}
+
+.sidebar-heading-link:hover {
+  color: var(--bs-indigo);
+}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
