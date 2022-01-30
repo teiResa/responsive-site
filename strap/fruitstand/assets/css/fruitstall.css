@@ -197,21 +197,24 @@ h1 {
   color: #8dbabb;
 }
 
-
+/*
 .modal-header{}
+*/
 
   .modal-title {
     background-color: #fffeee;
     color: #e66d3d;
   }
-  .modal-btn-x{
-
-  }
-.modal-body {}
+  /*
+  .modal-btn-x{}
+  .modal-body {}
+  */
+  /*
   .modal-body label{}
   .modal-btn-submit {
-    /* Not here. Change the colour in the class part of the html tag.*/
+    /* Not here. Change the colour in the class part of the html tag.
   }
+  */
 .modal input {
     color: #8bbabb;
     border-color: #8bbabb;
