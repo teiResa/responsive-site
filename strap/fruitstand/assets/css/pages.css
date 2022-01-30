@@ -57,3 +57,18 @@ main::before {
 .main-reorder:before {
   height: 100vh !important;
 }
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ accessibility fixes ~~~~~~~~~~~~~~~~~~~~~*/
+
+.visually-hidden {
+  display: none;
+  width: 1px;
+  height: 1px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ mobile fixes ~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@media mobile AND (max-width: 590px;) {
+  .
+}
