@@ -159,24 +159,62 @@
                                     </code>
                                 </dd>
                                 <dd>
-                                    <p> 'controls' makes the following panel display.</p>
-                                    <audio controls autoplay>
-                                        <source src="https://teiresa.github.io/responsive-site/strap/assets/notebook/SoKo - Shitty day.mp3" type="audio/mp3">
-                                        <source src="..\..\..\..\..\strap\assets\notebook\SoKo - Shitty day.mp33" type="audio/mp3">
+                                    <p> The 'controls' makes the following panel display. 'autoplay' can be put in the same area as controls. It makes the audio start on load. I find that pretty annoying for this purpose, but it does have its perks.</p>
+                                    <details>
+                                        Song: Shitty Day <br>
+                                        Artist: SoKo    <br>
+                                        This song isn't mine. It was the only autio file available at time of writing.</details>
+                                    <audio controls>
+                                        <source src="SoKo - Shitty day.mp3" type="audio/mp3" preload="auto">
                                       Your browser does not support the audio tag.
                                       </audio>
+                                      
                                 </dd>
-                                <dt> &lt; embed &gt;</dt>
+                            <dt> &lt; embed &gt;</dt>
                                     <dd>This tag has been <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> depreciated since HTML4 was released. For more info, go see <a href="https://www.w3docs.com/learn-html/html-embed-tag.html">The w3 doc</a> on embed tag.</dd>
+                            <dt></dt>
+                                <dd></dd>
+                            <dt> &lt;iframe&gt;</dt>
+                                <dd> Nesting webpages, displaying PDFs, etc. </dd>
+                                <dd><code>
+                                    &lt;iframe src="__<small>URL to webpage or PDF here</small>__" frameborder="0"&gt;<br>&lt;/iframe&gt;
+                                </code></dd>
+                                
+                                <div class="row">
+                                    <div class="col-6 notes-left">
+                                        
+                                        A Nested webpages
+                                    <iframe src="https://teiresa.github.io" frameborder="2"></iframe>
+                                        
+                                    </div>
+                                    <div class="col-6 notes-right">
+                                        Displaying a PDF
+                                        <iframe src="https://teiresa.github.io/gallery/resources/wireframes/teiresa_personal_site/HEADER_&_FOOTER_&_MENUS.pdf" frameborder="0"></iframe>
+                                    </div>
+                                </div>
+                            
 
                             <dt>Hyperlinks</dt>
                                 <dd>
                                     Add a <em>hyperlink</em> to your page <code> &lt;a href="google.ca"&gt;</code>
                                 </dd>
-                            <dt>Favicons</dt>
-                                <dd>Those icons in the browser tab.</dd>
-                                <dd><code>&lt;link rel="icon" href="https://yours.com/assets/favicon.ico"&gt;</code></dd>
-                                <img src="https://teiresa.github.io/responsive-site/strap/assets/notebook/favicon.png" alt="favicon on tab" style="width: 70vw;">
+                            <dt>&lt;video&gt;</dt>
+                                <dd>This video is for example purposes only. The cursor just moves around the window.</dd>
+                                <dd>
+                                    <code>
+                                        &lt;video width="320" height="240" controls&gt; <br>
+                                            &lt;source src="teiResa example.mp4" type="video/mp4"&gt; <br>
+                                        Your browser does not support the video tag. <br>
+                                        &lt;/video&gt;
+                                    </code>
+                                    
+                                </dd>
+                                <dd>
+                                    <video width="320" height="240" controls>
+                                        <source src="teiResa example.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                    </video>
+                                </dd>
                             
                             
                         </dl>
