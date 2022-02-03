@@ -37,7 +37,6 @@
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Ignoring the Flow</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Cite Heading Values & Use</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Metadata</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Hyperlinks</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/links.html">
                         Using &lt;link&gt;</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Description Lists</a>
@@ -102,27 +101,107 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">User Input & Forms</h1>
-                    <p> Have you heard the term IU being thrown around? Well, this isn't it. This is User Input. User input are the features like text fields, radio buttons, and check boxes. Here is a <a href="https://teiresa.github.io/rwd/rwd/survey/survey.html">sample form</a> I made a long while back.</p>
-                        <h2>Text Field</h2>
+                    <h1 class="mt-4">Using &lt;link&gt; and Other Links</h1>
+                    <p> </p>
+                        <h2>The Tags</h2>
                         <div class="row">
                         <div class="col-6 notes-left">
                            
                                 <code>
-                                    &lt;input type="text" id="f_name" name="firstname" required &gt; <br>
-                                    &lt;button type="submit"&gt;  <br>
-                                        submit   <br>
-                                    &lt;/button&gt;   <br>
+                                    &lt; a &gt; <br>
+                                    &lt; area &gt; <br>
+                                    <a href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/user-input.html">
+                                    &lt; form &gt; </a> <br>
+                                    &lt; link &gt; <br>
                                 </code>
                             
                         </div>
                         <div class="col-6 notes-right">
-                            Creates a text field. <br>
-                            <code>name="firstname"</code> <br>
-                            <code>required</code> makes the form not move on until it has anything here.
+                            anchor tag <br>
+                            area within image map <br>
+                            document with interactivity <br>
+                            an external link <br>
+                        </div>
+                        </div>
+                        <br><br>
+                    
+                        <h2>Example Uses</h2>
+                        <p>stylesheets, favicons, printable stylesheet, and responsive to screen parameters.</p>
 
+
+                        <br><br>
+
+                        <dl>
+                            <dt>Stylesheets</dt>
+                                <dd>
+                                    Link a CSS to an HTML using <code> &lt;link rel="stylesheet" href="css/main.css"&gt;</code>
+                                </dd>
+                            <dt>Hyperlinks</dt>
+                                <dd>
+                                    Add a <em>hyperlink</em> to your page <code> &lt;a href="google.ca"&gt;</code>
+                                </dd>
+                            <dt>Favicons</dt>
+                                <dd>Those icons in the browser tab.</dd>
+                                <dd><code>&lt;link rel="icon" href="https://yours.com/assets/favicon.ico"&gt;</code></dd>
+                                <img src="https://teiresa.github.io/responsive-site/strap/assets/notebook/favicon.png" alt="favicon on tab">
+                            <dt>Printable Stylesheets</dt>
+                                <dd>fdfdsfsdf</dd>
+                            <dt>Responsive to Screen Parameters</dt>
+                                <dd>sdfsdfsdfs</dd>
+                            <dt>Full Image as Hyperlink</dt>
+                                <dd>Put the image tag within the anchor tag.</dd>
+                                <dd><code>&lt;a href=""&gt;
+                                        &lt;img src="___" alt=""&gt;
+                                    &lt;/a&gt;
+                                </code></dd>
+                            <dt>Part of Image as Hyperlink</dt>
+                                <dd> Put the image, then have a map over it. Use the coordinents to select where on the image to put the link's shape.</dd>
+                                <dd>
+                                    <code>
+                                    &lt;img src="___" alt="" usemap="#books"&gt; <br>
+                                    &lt;map name="books"&gt;
+                                    <br>
+                                    &lt;area shape="rect" coords=" 34, 44, 100, 100" href="hyperlink.com" alt="Click to go to books"&gt;
+                                    <br>
+                                    &lt;/map&gt;
+                                    </code>
+
+                                
+                                </dd>
+                            
+                        </dl>
+
+                        <div class="row">
+                            <h2>Examples</h2>
+                            
+                            <div class="col-6 notes-left">
+                                <h3>Ex: Full Image Link</h3>
+                                <a href="https://teiresa.github.io">
+                                    <img src="https://teiresa.github.io/background/assets/teiResaHead.ico" alt=""  width="200px">
+                                </a>
+                                <p> Click anywhere on this image the whole thing is a link.</p>
+                            </div>
+                            <div class="col-6 notes-right">
+                                <div>
+                                    <h3>Ex: Part of Image Link</h3>
+                                    <img src="https://teiresa.github.io/background/assets/teiResaHead.ico" alt="" usemap="#example" width="200px">
+                                    <map name="example" >
+                                        <area shape="rect" coords="30, 65, 83, 117" href="hefteye.com" alt="left eye"
+                                         >
+                                    </map>
+                                    <p> For this image, only the left <dfn title="coloured part of eye">cornea</dfn> is a link.</p>
+                                    <p>This was achieved using 
+                                        
+                                        <code>
+                                            &lt;area shape="rect" coords="30, 65, 83, 117" ...
+                                         &gt;
+                                        </code>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        </div>
+
+                        
                 </div>
             </div>
         </div>
