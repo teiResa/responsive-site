@@ -29,7 +29,7 @@
                         Div, section, article, or aside?</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">HTML5 Features</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Videos</a>
-                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/other-sources.html">Adding __ from other source</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Adding __ from other source</a>
                     <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Multimedia tags & attr's</a>
                     <a class="list-group-item list-group-item-action 
                     list-group-item-light p-3" href="#!">Rich Graphics on Web</a>
@@ -101,29 +101,41 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">Using &lt;link&gt; and Other Links</h1>
+                    <h1 class="mt-4">Adding Content From Other Sources</h1>
                     <p> </p>
                         <h2>The Tags</h2>
                         <div class="row">
                         <div class="col-6 notes-left">
                            
                                 <code>
-                                    &lt; a &gt; <br>
-                                    &lt; area &gt; <br>
-                                    <a href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/user-input.html">
-                                    &lt; form &gt; </a> <br>
-                                    &lt; link &gt; <br>
+                                    &lt; audio &gt; <i class="fas fa-play-circle"></i><br> 
+                                    &lt; data &gt; <br>
+                                    &lt; embed &gt;
+                                    <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> <br>
+                                    &lt; figure &gt; <br>
+                                    &lt; iframe &gt; <br>
+                                    &lt; img &gt; <br>
+                                    &lt; object &gt; <br>
+                                    &lt; video &gt;
+                                    <i class="fas fa-play-circle"></i> <br>
                                 </code>
                             
                         </div>
                         <div class="col-6 notes-right">
-                            anchor tag <br>
-                            area within image map <br>
-                            document with interactivity <br>
-                            an external link <br>
+                            audio will embed audio (& player) on page. <br>
+                            data <br>
+                            embed will embed plug-ins in a web page. <br>
+                            figure <br>
+                            iframe will embed a PDF into a web page. <br>
+                            Puts an image on your page.<br>
+                            embed an object within an HTML doc.<br>
+                            video <br>
+
                         </div>
                         </div>
                         <br><br>
+
+                        <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn>
                     
                         <h2>Example Uses</h2>
                         <p>stylesheets, favicons, printable stylesheet, and responsive to screen parameters.</p>
@@ -132,10 +144,31 @@
                         <br><br>
 
                         <dl>
-                            <dt>Stylesheets</dt>
+                            <dt>&lt;audio&gt;</dt>
                                 <dd>
-                                    Link a CSS to an HTML using <code> &lt;link rel="stylesheet" href="css/main.css"&gt;</code>
+                                    Extensions: .midi, .mid, .wma, .rm, .ram, .wav, .aac, .mp3, .ogg, .mp4. 
+                                    <small>There may be more.</small>
                                 </dd>
+                                <dd>
+                                    <code>
+                                        &lt;audio controls&gt; <br>
+                                            &lt;source src="songs.ogg" type="audio/ogg"&gt; <br>
+                                            &lt;source src="songs.mp3" type="audio/mpeg"&gt;
+                                          Your browser does not support the audio tag. <br>
+                                          &lt;/audio&gt;
+                                    </code>
+                                </dd>
+                                <dd>
+                                    <p> 'controls' makes the following panel display.</p>
+                                    <audio controls>
+                                        <source src="songs.ogg" type="audio/ogg">
+                                        <source src="songs.mp3" type="audio/mpeg">
+                                      Your browser does not support the audio tag.
+                                      </audio>
+                                </dd>
+                                <dt> &lt; embed &gt;</dt>
+                                    <dd>This tag has been <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> depreciated since HTML4 was released. For more info, go see <a href="https://www.w3docs.com/learn-html/html-embed-tag.html">The w3 doc</a> on embed tag.</dd>
+
                             <dt>Hyperlinks</dt>
                                 <dd>
                                     Add a <em>hyperlink</em> to your page <code> &lt;a href="google.ca"&gt;</code>
@@ -144,30 +177,7 @@
                                 <dd>Those icons in the browser tab.</dd>
                                 <dd><code>&lt;link rel="icon" href="https://yours.com/assets/favicon.ico"&gt;</code></dd>
                                 <img src="https://teiresa.github.io/responsive-site/strap/assets/notebook/favicon.png" alt="favicon on tab" style="width: 70vw;">
-                            <dt>Printable Stylesheets</dt>
-                                <dd>fdfdsfsdf</dd>
-                            <dt>Responsive to Screen Parameters</dt>
-                                <dd>sdfsdfsdfs</dd>
-                            <dt>Full Image as Hyperlink</dt>
-                                <dd>Put the image tag within the anchor tag.</dd>
-                                <dd><code>&lt;a href=""&gt;
-                                        &lt;img src="___" alt=""&gt;
-                                    &lt;/a&gt;
-                                </code></dd>
-                            <dt>Part of Image as Hyperlink</dt>
-                                <dd> Put the image, then have a map over it. Use the coordinents to select where on the image to put the link's shape.</dd>
-                                <dd>
-                                    <code>
-                                    &lt;img src="___" alt="" usemap="#books"&gt; <br>
-                                    &lt;map name="books"&gt;
-                                    <br>
-                                    &lt;area shape="rect" coords=" 34, 44, 100, 100" href="hyperlink.com" alt="Click to go to books"&gt;
-                                    <br>
-                                    &lt;/map&gt;
-                                    </code>
-
-                                
-                                </dd>
+                            
                             
                         </dl>
 
