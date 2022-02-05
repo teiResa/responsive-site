@@ -11,9 +11,35 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../../../css/styles.css" rel="stylesheet" />
-        <link href="../../../css/tables.css" rel="stylesheet" />
     </head>
     <body>
+        <style>
+            .h1-hr{
+                opacity: 20%;
+            }
+            .no-vis{
+                user-select: none;
+                color:white;
+                /*
+                opacity:0;
+                color: white;
+                */
+            }
+            .example-underline {
+                font-weight: normal;
+                text-decoration: underline;
+                color: palevioletred;       /* may be a vis problem */
+            }
+            .example-title {
+                font-weight: normal;
+                opacity: 50%;
+                font-size: small;
+            }
+            
+            
+           
+            
+        </style>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
             <div class="border-end bg-white" id="sidebar-wrapper">
@@ -102,7 +128,7 @@
                 </nav>
                 <!-- Page content-->
                 <div class="container-fluid">
-                    <h1 class="mt-4">HTML Metadata</h1>
+                    <h1 class="mt-4">Multimedia & Stuff From Other Places</h1>
                     <hr class="h1-hr" style="opacity: 20%;">
                     <p>   </p>
                     
@@ -126,155 +152,74 @@
                             </ul>
 
                         </div>
-                        
-                        
-
-
                     </div>
+                        
                         <div class="row">
-                        <div class="col-2 offset-1 notes-left">
-                           
-                                <code>
-                                    &lt; audio &gt; <i class="fas fa-play-circle"></i><br> 
-                                    &lt; data &gt; <br>
-                                    &lt; embed &gt;
-                                    <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> <br>
-                                    &lt; figure &gt; <br>
-                                    &lt; iframe &gt; <br>
-                                    &lt; img &gt; <br>
-                                    &lt; object &gt; <br>
-                                    &lt; video &gt;
-                                    <i class="fas fa-play-circle"></i> <br>
-                                </code>
-                            
-                        </div>
-                        <div class="col-6 col-md-4 notes-right">
-                            audio will embed audio (& player) on page. <br>
-                            data <br>
-                            embed will embed plug-ins in a web page. <br>
-                            figure <br>
-                            iframe will embed a PDF into a web page. <br>
-                            Puts an image on your page.<br>
-                            embed an object within an HTML doc.<br>
-                            video <br>
+                            <div class="col-10 offset-1">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="3"> The Tags</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr  class="no-vis">
+                                            <td width="20%">Col1</td>
+                                            <td width="10%">Col2</td>
+                                            <td>Col3</td>
+                                        </tr>
 
-                        </div>
-                        </div>
-                        <br><br>
-
-                        <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn>
-                    
-                        <h2>Example Uses</h2>
-                        <p>stylesheets, favicons, printable stylesheet, and responsive to screen parameters.</p>
-
-
-                        <br><br>
-
-                        <dl>
-                            <dt>&lt;audio&gt;</dt>
-                                <dd>
-                                    Extensions: .midi, .mid, .wma, .rm, .ram, .wav, .aac, .mp3, .ogg, .mp4. 
-                                    <small>There may be more.</small>
-                                </dd>
-                                <dd>
-                                    <code>
-                                        &lt;audio controls&gt; <br>
-                                            &lt;source src="songs.ogg" type="audio/ogg"&gt; <br>
-                                            &lt;source src="songs.mp3" type="audio/mpeg"&gt;
-                                          Your browser does not support the audio tag. <br>
-                                          &lt;/audio&gt;
-                                    </code>
-                                </dd>
-                                <dd>
-                                    <p> The 'controls' makes the following panel display. 'autoplay' can be put in the same area as controls. It makes the audio start on load. I find that pretty annoying for this purpose, but it does have its perks.</p>
-                                    <details>
-                                        Song: Shitty Day <br>
-                                        Artist: SoKo    <br>
-                                        This song isn't mine. It was the only autio file available at time of writing.</details>
-                                    <audio controls>
-                                        <source src="SoKo - Shitty day.mp3" type="audio/mp3" preload="auto">
-                                      Your browser does not support the audio tag.
-                                      </audio>
-                                      
-                                </dd>
-                            <dt> &lt; embed &gt;</dt>
-                                    <dd>This tag has been <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> depreciated since HTML4 was released. For more info, go see <a href="https://www.w3docs.com/learn-html/html-embed-tag.html">The w3 doc</a> on embed tag.</dd>
-                            <dt></dt>
-                                <dd></dd>
-                            <dt> &lt;iframe&gt;</dt>
-                                <dd> Nesting webpages, displaying PDFs, etc. </dd>
-                                <dd><code>
-                                    &lt;iframe src="__<small>URL to webpage or PDF here</small>__" frameborder="0"&gt;<br>&lt;/iframe&gt;
-                                </code></dd>
-                                
-                                <div class="row">
-                                    <div class="col-6 notes-left">
+                                        <tr>
+                                            <td colspan="3" style="color:white; background-color: rgba(105, 90, 205, 0.5); font-weight: bold; padding-left: 5%;">The Tags</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pronounced like an English 'm'.">&lt; audio &gt;</dfn></code></td>
+                                            <td><i class="fas fa-play-circle"></i></td>
+                                            <td>audio will embed audio (& player) on page.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pixels">&lt; data &gt;</dfn></code></td>
+                                            <td></td>
+                                            <td>data</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="percentage">&lt; embed &gt;</dfn></code></td>
+                                            <td><dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn></td>
+                                            <td>embed will embed plug-ins in a web</td>
+                                        </tr>
                                         
-                                        A Nested webpages
-                                    <iframe src="https://teiresa.github.io" frameborder="2"></iframe>
-                                        
-                                    </div>
-                                    <div class="col-6 notes-right">
-                                        Displaying a PDF
-                                        <iframe src="https://teiresa.github.io/gallery/resources/wireframes/teiresa_personal_site/HEADER_&_FOOTER_&_MENUS.pdf" frameborder="0"></iframe>
-                                    </div>
-                                </div>
-                            
-
-                            <dt>Hyperlinks</dt>
-                                <dd>
-                                    Add a <em>hyperlink</em> to your page <code> &lt;a href="google.ca"&gt;</code>
-                                </dd>
-                            <dt>&lt;video&gt;</dt>
-                                <dd>This video is for example purposes only. The cursor just moves around the window.</dd>
-                                <dd>
-                                    <code>
-                                        &lt;video width="320" height="240" controls&gt; <br>
-                                            &lt;source src="teiResa example.mp4" type="video/mp4"&gt; <br>
-                                        Your browser does not support the video tag. <br>
-                                        &lt;/video&gt;
-                                    </code>
-                                    
-                                </dd>
-                                <dd>
-                                    <video width="320" height="240" controls>
-                                        <source src="teiResa example.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                    </video>
-                                </dd>
-                            
-                            
-                        </dl>
-
-                        <div class="row">
-                            <h2>Examples</h2>
-                            
-                            <div class="col-6 notes-left">
-                                <h3>Ex: Full Image Link</h3>
-                                <a href="https://teiresa.github.io">
-                                    <img src="https://teiresa.github.io/background/assets/teiResaHead.ico" alt=""  width="200px">
-                                </a>
-                                <p> Click anywhere on this image the whole thing is a link.</p>
-                            </div>
-                            <div class="col-6 notes-right">
-                                <div>
-                                    <h3>Ex: Part of Image Link</h3>
-                                    <img src="https://teiresa.github.io/background/assets/teiResaHead.ico" alt="" usemap="#example" width="200px">
-                                    <map name="example" >
-                                        <area shape="rect" coords="30, 65, 83, 117" href="hefteye.com" alt="left eye"
-                                         >
-                                    </map>
-                                    <p> For this image, only the left <dfn title="coloured part of eye">cornea</dfn> is a link.</p>
-                                    <p>This was achieved using 
-                                        
-                                        <code>
-                                            &lt;area shape="rect" coords="30, 65, 83, 117" ...
-                                         &gt;
-                                        </code>
-                                    </p>
-                                </div>
+                                        <tr>
+                                            <td><code><dfn title="pronounced like an English 'x' or 'ex' in 'my ex-boyfriend'.">&lt; figure &gt;</dfn></code></td>
+                                            <td></td>
+                                            <td>figure</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; iframe &gt;</dfn></code></td>
+                                            <td></td>
+                                            <td> iframe will embed a PDF into a web page.</td>
+                                        </tr>
+                                        <tr>
+                                          <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; img &gt;</dfn></code></td>
+                                          <td></td>
+                                          <td> Puts an image on your page.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="percentage">&lt; object &gt;</dfn></code></td>
+                                            <td></td>
+                                            <td> embed an object within an HTML doc.</td>
+                                        </tr>
+                                        <tr>
+                                          <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; video  &gt;</dfn></code></td>
+                                          <td><i class="fas fa-play-circle"></i></td>
+                                          <td>video</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+
+
+<br>
 
                         
                 </div>

@@ -1,0 +1,24 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~Tables,  created for unit-sizes ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+            .h1-hr{
+                opacity: 20%;
+            }
+            .no-vis{
+                user-select: none;
+                color:white;
+                /*
+                opacity:0;
+                color: white;
+                */
+            }
+            .example-underline {
+                font-weight: normal;
+                text-decoration: underline;
+                color: palevioletred;       /* may be a vis problem */
+            }
+            .example-title {
+                font-weight: normal;
+                opacity: 50%;
+                font-size: small;
+            }
+            
+            

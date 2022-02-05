@@ -11,6 +11,7 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../../../css/styles.css" rel="stylesheet" />
+        <link href="../../../css/tables.css" rel="stylesheet" />
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -103,36 +104,70 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Adding Content From Other Sources</h1>
                     <p> </p>
-                        <h2>The Tags</h2>
-                        <div class="row">
-                        <div class="col-6 notes-left">
-                           
-                                <code>
-                                    &lt; audio &gt; <i class="fas fa-play-circle"></i><br> 
-                                    &lt; data &gt; <br>
-                                    &lt; embed &gt;
-                                    <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn> <br>
-                                    &lt; figure &gt; <br>
-                                    &lt; iframe &gt; <br>
-                                    &lt; img &gt; <br>
-                                    &lt; object &gt; <br>
-                                    &lt; video &gt;
-                                    <i class="fas fa-play-circle"></i> <br>
-                                </code>
-                            
-                        </div>
-                        <div class="col-6 notes-right">
-                            audio will embed audio (& player) on page. <br>
-                            data <br>
-                            embed will embed plug-ins in a web page. <br>
-                            figure <br>
-                            iframe will embed a PDF into a web page. <br>
-                            Puts an image on your page.<br>
-                            embed an object within an HTML doc.<br>
-                            video <br>
 
-                        </div>
-                        </div>
+                    <div class="row">
+                      <div class="col-10 offset-1">
+                          <table>
+                              <thead>
+                                  <tr>
+                                      <th colspan="3"> The Tags</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr  class="no-vis">
+                                      <td width="20%">Col1</td>
+                                      <td width="10%">Col2</td>
+                                      <td>Col3</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td colspan="3" style="color:white; background-color: rgba(105, 90, 205, 0.5); font-weight: bold; padding-left: 5%;">The Tags</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code><dfn title="pronounced like an English 'm'.">&lt; audio &gt;</dfn></code></td>
+                                      <td><i class="fas fa-play-circle"></i></td>
+                                      <td>audio will embed audio (& player) on page.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code><dfn title="pixels">&lt; data &gt;</dfn></code></td>
+                                      <td></td>
+                                      <td>data</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code><dfn title="percentage">&lt; embed &gt;</dfn></code></td>
+                                      <td><dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn></td>
+                                      <td>embed will embed plug-ins in a web</td>
+                                  </tr>
+                                  
+                                  <tr>
+                                      <td><code><dfn title="pronounced like an English 'x' or 'ex' in 'my ex-boyfriend'.">&lt; figure &gt;</dfn></code></td>
+                                      <td></td>
+                                      <td>figure</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; iframe &gt;</dfn></code></td>
+                                      <td></td>
+                                      <td> iframe will embed a PDF into a web page.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; img &gt;</dfn></code></td>
+                                    <td></td>
+                                    <td> Puts an image on your page.</td>
+                                  </tr>
+                                  <tr>
+                                      <td><code><dfn title="percentage">&lt; object &gt;</dfn></code></td>
+                                      <td></td>
+                                      <td> embed an object within an HTML doc.</td>
+                                  </tr>
+                                  <tr>
+                                    <td><code><dfn title="Pica. Pronounced like '&pi;-ka'.">&lt; video  &gt;</dfn></code></td>
+                                    <td><i class="fas fa-play-circle"></i></td>
+                                    <td>video</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+
                         <br><br>
 
                         <dfn title="depreciated"><i class="fas fa-dizzy"></i></dfn>
