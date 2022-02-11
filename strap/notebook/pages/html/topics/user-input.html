@@ -11,6 +11,11 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../../../css/styles.css" rel="stylesheet" />
+
+        <!-- stylsheet for time stuff at top -->
+        <link rel="stylesheet" href="assets/styles.css">
+        <!-- font info -->
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&amp;family=Gaegu:wght@300;400&amp;family=Stylish&amp;display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="d-flex" id="wrapper">
@@ -54,7 +59,22 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <div class="container-fluid">
                         <button class="btn btn-warning" id="sidebarToggle">Topic List</button>
+
+                        <div class="row my-time" style="width:70%;">  <!-- the time on the top -->
+                          <div id="hour_anim" class="col-1 offset-2 offset-sm-1"></div>
+                          &nbsp;&nbsp;
+                          <div id="curr_time" class="col-6 col-sm-8 dateTimestamp media-dateTimestamp"></div>
+                          &nbsp;&nbsp;
+                          <div id="sun_moon" class="col-1"></div> 
+                        </div>
+
+
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                        
+
+
+
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active"><a class="nav-link" href="#!">
@@ -131,5 +151,8 @@
         <script src="js/scripts.js"></script>
         <!-- fontawesome kit-->
         <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+
+        <!-- Core theme JS-->
+        <script src="https://teiresa.github.io/background/current-time/assets/time.js" crossorigin="anonymous"></script>
     </body>
 </html>
