@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> resa's notebook | html</title>
+        <!-- favicon-->
+        <link rel="icon" href="https://teiresa.github.io/background/assets/teiresahead.ico"> 
+
+        <!-- core theme css (includes bootstrap)-->
+        <link href="../../../css/styles.css" rel="stylesheet" />
+        <link href="../../../css/tables.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <div class="d-flex" id="wrapper">
+            <!-- sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <!-- the whole sidebar title is a link-->
+                <a class="sidebar-heading-link" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/html_notes.html">
+                    <div class="sidebar-heading border-bottom bg-light">
+                    <!-- ~~ the icon before the title -->
+                    <i class="fab fa-html5"></i> html review</div>
+                </a>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/user-input.html">
+                        user input & forms</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/dsaa.html">
+                        div, section, article, or aside?</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">html5 features</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">videos</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/other-sources.html">adding __ from other source</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/other-sources.html">multimedia tags & attr's</a>
+                    <a class="list-group-item list-group-item-action 
+                    list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/rich-graphics.html">rich graphics on web</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/img-fig.html">images vs figures</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/flow.html">ignoring the flow</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">cite heading values & use</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/metadata.html">metadata</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/links.html">
+                        using &lt;link&gt;</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/description-list.html">description lists</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/units-size.html">units of size</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">cascade properties</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">word processing</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/topics/flex.html">flexbox</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">element attributes</a>
+                    
+                </div>
+            </div>
+            <!-- page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-warning" id="sidebartoggle">topic list</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="#!">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentcolor" class="bi bi-house-fill" viewbox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="m8 3.293 6 6v13.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1 2 13.5v9.293l6-6zm5-.793v6l-2-2v2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                                        <path fill-rule="evenodd" d="m7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708l8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708l7.293 1.5z"/>
+                                      </svg>
+                                </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#!">back to teiresa</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbardropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">notebooks</a>
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbardropdown">
+                                        <a class="dropdown-item" href="#!"> <i class="fas fa-universal-access"></i> accessibility</a>
+                                        <a class="dropdown-item" href="#!"> <i class="fas fa-user-astronaut"></i> ui/ux</a>
+                                        <a class="dropdown-item" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/html/html_notes.html"> <i class="fab fa-html5"></i>
+                                            html review</a>
+                                        <a class="dropdown-item" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/css/css_notes.html"> <i class="fab fa-css3-alt"></i> 
+                                            css review </a>
+                                        <a class="dropdown-item" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/js/js_notes.html"> <i class="fab fa-js-square"></i>
+                                            javascript review </a>
+                                        <a class="dropdown-item" href="https://teiresa.github.io/responsive-site/strap/notebook/pages/ts/ts_notes.html"> <i class="fas fa-code"></i>
+                                            typescript review </a>
+                                    
+                                        
+                                        <div class="dropdown-divider"> frameworks & libraries </div>
+                                        <p> frameworks & libraries</p>
+                                        <a class="dropdown-item" href="#!"> <i class="fab fa-bootstrap"></i> 
+                                            bootstrap</a>
+                                        <a class="dropdown-item" href="#!"> <i class="fab fa-font-awesome"></i> 
+                                            font awesome</a>
+                                        <a class="dropdown-item" href="#!"> <i class="far fa-question-circle"></i>
+                                            jquery</a>
+                                        <a class="dropdown-item" href="#!"> <i class="fab fa-sass"></i>
+                                            sass</a>
+                                        <a class="dropdown-item" href="#!"> <i class="fab fa-react"></i>
+                                            react & redux</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://teiresa.github.io/notebooks/">back to notebooks list</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">css units of size</h1>
+                    <hr class="h1-hr" style="opacity: 20%;">
+                    <p>   </p>
+                    
+                    <div class="row" style="display: flex; align-items: center; justify-content: end;">
+                        <div class="col-1">
+                            <!-- the svg is the info i icon-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentcolor" class="bi bi-info-square" viewbox="0 0 16 16">
+                                    <path d="m14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h2a1 1 0 0 1-1-1v2a1 1 0 0 1 1-1h12zm2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v2a2 2 0 0 0-2-2h2z"/>
+                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533l8.93 6.588zm9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                </svg>
+                        </div>
+                        <div class="col-6 col-xl-4">
+
+                            <ul style="display: flex; flex-direction: column; align-content: flex-end;">
+                                <li>do not use print units on screen;</li>
+                                <li> units can be <dfn title="refers to the physical units"> 
+                                    absolute </dfn> or they are<dfn title="the units are relative to the size of another unit.">
+                                    relative</dfn>; and,</li>
+                                <li> <dfn title=" you're hovering now. it just means to hold your cursor over it.">
+                                    anything in italics is hoverable.</dfn></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                        
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="3"> css units of size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr  class="no-vis">
+                                            <td width="20%">col1</td>
+                                            <td width="20%">col2</td>
+                                            <td>col3</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td colspan="3" style="color:white; background-color: rgba(105, 90, 205, 0.5); font-weight: bold; padding-left: 5%;">screen only:</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pronounced like an english 'm'.">em</dfn></code></td>
+                                            <td>relative</td>
+                                            <td>width of a capital m in used font.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pixels">px</dfn></code></td>
+                                            <td>absolute</td>
+                                            <td><b class="example-title">{example 1a} </b> 
+                                                <dfn title="the div has a border-radius of 50px.">
+                                                &lt;div <b class="example-underline">style="border-radius: 50px;"</b>&gt;</dfn></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="percentage">%</dfn></code></td>
+                                            <td>relative</td>
+                                            <td><b class="example-title"> {example 1b} </b> <dfn title="the image takes up 20% (by width) of the parent container."> &lt;img src="" alt="" <b class="example-underline">width="20%"</b>&gt;</dfn></td>
+                                        </tr>
+                                        <tr> <td colspan="3" class="no-vis"> i am blank.</td> </tr>
+                                        <tr>
+                                            <td><code><dfn title="pronounced like an english 'x' or 'ex' in 'my ex-boyfriend'.">ex</dfn></code></td>
+                                            <td></td>
+                                            <td>equal to the height of the lowercase "x".</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" style="color:white; background-color: rgba(105, 90, 205, 0.5); font-weight: bold; padding-left: 5%;">print only:</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pronounced like an english 'm'.">em</dfn></code></td>
+                                            <td>relative</td>
+                                            <td>width of a capital m in used font.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="centimeter, millimeter, inch">cm, mm, in</dfn></code></td>
+                                            <td>absolute</td>
+                                            <td>they stand for centimeter, millimeter, and inches, respectively.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="point">pt</dfn></code></td>
+                                            <td>absolute</td>
+                                            <td> at <dfn title="1/72 * 25.4 mm ≈ 0.353 mm"> 1⁄72 of an international inch</dfn>, this is typography's smallest unit of measure.  </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="pica. pronounced like '&pi;-ka'.">pc</dfn></code></td>
+                                            <td>absolute</td>
+                                            <td> about 1⁄6 of an inch, or 1⁄72 of a foot. a foot is 30.48 cm. 
+                                                <dfn title=" 30.48 cm * 1⁄72 = 30.48 / 72  ≈ 0.423cm"> so, &lt; 0.43 cm.</dfn> </td>
+                                        </tr>
+                                        <tr>
+                                            <td><code><dfn title="percentage">%</dfn></code></td>
+                                            <td>relative</td>
+                                            <td> if parent container is 100%. <dfn title="100 * 1⁄2 = 100 / 2 = 50%."> 1⁄2 is 50%</dfn>, <dfn title="100 * 1⁄4 = 100 / 4 = 25%."> 1⁄4 is 25% </dfn>, <dfn title="100 * 1⁄4 = 100 / 4 = 25% * 3 = 75%."> 3⁄4 is 75% </dfn>, etc. </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+<br>
+
+                        
+                </div>
+            </div>
+        </div>
+        <!-- bootstrap core js-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- core theme js-->
+        <script src="js/scripts.js"></script>
+        <!-- fontawesome kit-->
+        <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+    </body>
+</html>
