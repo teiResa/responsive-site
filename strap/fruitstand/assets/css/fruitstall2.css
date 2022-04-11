@@ -82,3 +82,23 @@ main::before {
 main {
   height: 90vh;
 }
+
+
+@media screen and (max-width: 800px) {
+ 
+ main::before {
+  /*
+  Bedtime. Make the background repeat when the screen is in split/mobile/vertical monitor.
+  
+  
+  Everything in here was to get the background to fade without effecting anything else.*/
+  content: "";
+  background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
+  background-repeat: repeat-y;
+
+  height:auto;
+
+}
+
+
+}
