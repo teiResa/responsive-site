@@ -343,8 +343,10 @@ input {
     Everything in here was to get the background to fade without effecting anything else. */
     content: "";
     background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
-    background-repeat: repeat-y !important;
+    background-repeat: repeat-y ;
     overflow-y: hidden;
+    height: calc(870px * 6) !important;   
+    /* Change the number after the * to make background longer, but not so long as to peek after footer. */
     /* margin: auto;
     min-height: 500vh;
     height:auto;
