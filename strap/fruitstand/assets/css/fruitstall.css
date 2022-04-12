@@ -356,9 +356,9 @@ input {
  } 
  } 
 
- @media screen and (min-width:760px) and (max-width:799px) {
+ @media screen and (min-width:760px) and (max-width:800px) {
   /*
-   Ipad Mini, 
+   Ipad Mini, zenbook split screen (hori)
   */
   main::before {   
    height: calc(870px * 2.1) !important;   
@@ -366,7 +366,7 @@ input {
  }
  }
 
- @media screen and (min-width:500px) and (max-width:759px) {
+ @media screen and (min-width:412px) and (max-width:759px) {
   /*
    Surface Duo
   */
@@ -375,18 +375,39 @@ input {
    /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
  }
  }
- 
- @media screen and (min-width:250px) and (max-width:500px) {
-  /*
-   Galaxy Fold, Galaxy A51/71
+
+ @media (min-width: 760px) and (max-width: 768px) {
+  /* 
+  767 bg too short, 
+  760 too short
+
+
+  576 too long
+  671 too long
+  718 too long
+  741 too llong
+  752 too long
+  757 too long
+
+  759 perfect
+
+  TOO SHORTS FIXED 
   */
   main::before {   
-   height: calc(870px * 6.3) !important;   
+   height: calc(870px * 4.1) !important;   
    /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
  }
- }
 
+}
 
+@media screen and (min-width:576px) and (max-width: 760px) {
+ /* TOO LONGS FIXED */
+ main::before {   
+  height: calc(870px * 3.8) !important;   
+  /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+}
+}
+ 
 
  @media screen and (min-width:350px) and (max-width:411px) {
   /*
@@ -394,6 +415,16 @@ input {
   */
   main::before {   
    height: calc(870px * 5.9) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+ }
+ } 
+ 
+ @media screen and (min-width:250px) and (max-width:349px) {
+  /*
+   Galaxy Fold, Galaxy A51/71
+  */
+  main::before {   
+   height: calc(870px * 6.3) !important;   
    /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
  }
  }
