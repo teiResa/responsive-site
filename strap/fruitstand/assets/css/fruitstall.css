@@ -180,7 +180,7 @@ h1 {
 
 
 
-/* ~~~~~~~~~~~~~~~~~~ Motals ~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~ Modals ~~~~~~~~~~~~~~~~~ */
 /*  #8dbabb #8bbabb */
 
 .modal-content{
@@ -337,19 +337,63 @@ input {
  
    main::before {
    
-    /* Bedtime. Make the background repeat when the screen is in split/mobile/vertical monitor.
-    
-    
+    /*
     Everything in here was to get the background to fade without effecting anything else. */
     content: "";
     background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
     background-repeat: repeat-y ;
     overflow-y: hidden;
-    height: calc(870px * 6) !important;   
+    height: calc(870px * 4) !important;   
     /* Change the number after the * to make background longer, but not so long as to peek after footer. */
-    /* margin: auto;
-    min-height: 500vh;
-    height:auto;
-    width: auto; */
   } 
+ }
+
+ @media screen and (min-width: 801px) {
+  main::before {   
+   height: calc(870px * 2.2) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+   
+ } 
+ } 
+
+ @media screen and (min-width:760px) and (max-width:799px) {
+  /*
+   Ipad Mini, 
+  */
+  main::before {   
+   height: calc(870px * 2.1) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+ }
+ }
+
+ @media screen and (min-width:500px) and (max-width:759px) {
+  /*
+   Surface Duo
+  */
+  main::before {   
+   height: calc(870px * 6) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+ }
+ }
+ 
+ @media screen and (min-width:250px) and (max-width:500px) {
+  /*
+   Galaxy Fold, Galaxy A51/71
+  */
+  main::before {   
+   height: calc(870px * 6.3) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+ }
+ }
+
+
+
+ @media screen and (min-width:350px) and (max-width:411px) {
+  /*
+   iPhone SE, iPhone 12 Pro
+  */
+  main::before {   
+   height: calc(870px * 5.9) !important;   
+   /* Change the number after the * to make background longer, but not so long as to peek after footer.  */
+ }
  }
