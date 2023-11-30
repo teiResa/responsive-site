@@ -4,10 +4,13 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Welcome | Tei's Fruitstall</title>
+ <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&amp;display=swap" rel="stylesheet">
 </head>
  <style>
   body {
-   background-image: url(assets/img/bg-happy.jpg);
+   background-image: url(../assets/img/bg-happy.jpg);
+   background-blend-mode: lighten;
+   background-color: rgba(211, 211, 211, 0.79);
    display: flex;
    justify-content: center;  
    align-content: center;
@@ -15,22 +18,101 @@
   
   }
   .testy {
+   margin: 15vh auto;
    width: 60vw;
    height: 60vh;
-   backdrop-filter: blur(3px);
+   backdrop-filter: blur(15px);
    border-radius: 6%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 15px;
+   text-align: center;
   }
 
-  #greeting{
+  #greeting1{
    font-weight: bold;
-   font-family: 'Vibur', 'Gaegu', cursive;
+   font-family: 'Vibur', 'Gaegu', 'Bubblegum Sans', cursive;
+   font-size: x-large;
+   font-weight: bolder;
+   color: #b96b9f;
+   width: 490px;
+   height: 120px;
+   align-self: center;
+   font-variant: petite-caps;
+   text-align: center;
+  }
+
+  .pinkTest {
+   background-color: pink;
+   color: salmon;
+  }
+
+  #user-instructions {
+   height: 95vh;
+   width: 550px;
+  }
+
+  #user-directions {
+   width: 390px;
+   display: flex;
+   justify-content: space-around;
+   backdrop-filter: blur(10px);
+   font-family: 'Vibur', 'Gaegu', 'Bubblegum Sans', cursive;
+   font-size: large;
+   margin-top: 15px;
+   
+  }
+
+  .direction a {
+   text-decoration: none;
+   line-height: 2.2rem;
+   background-color: #8dbabb86 ;
+   padding: 5px;
+  }
+
+
+
+
+  #user-instructions{
+   font-family: 'Gaegu', cursive;
+   /*border-bottom: #b96b9f 5px dotted;*/
+   border-bottom: 14px double #8dbabb86;
+  }
+
+  a:link {
+   color: #b96b9f;
+   
+  }
+
+  a:visited {
+   color: blueviolet;
+  }
+
+  a:hover {
+   font-weight: bold;
+   color: #b96b9f;
+  }
+  
+  a:active {
+   color: cadetblue;
   }
 
  </style>
 <body>
 
  <div class="testy">
-  <div id="greeting"> hihihi</div>
+  <div id="greeting1"></div>
+  <div id="user-instructions"> ^^ greeting one should be above me. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat blanditiis totam nostrum accusantium voluptates adipisci eaque exercitationem expedita nobis? Quia, officia harum dolor velit debitis natus necessitatibus eius praesentium delectus.
+<br><br>
+   Lorem sint modi, pariatur velit illum ducimus quos, ipsum, amet nam consequuntur. Assumenda, nemo! Architecto temporibus rerum perspiciatis facilis.
+  </div>
+  <div id="user-directions">
+   <div class="direction direction0"><a href="../pages/fs-special.html">Let's see some deals!</a></div>
+   <div class="direction direction1"><a href="https://teiresa.github.io/responsive-site/strap/fruitstand/pages/fs-catalogue.html">To the catalogue</a></div>
+  </div>
+ 
+
  </div>
 
 
@@ -41,5 +123,5 @@
 
 <!-- fontawesome kit-->
 <script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
-<script src="js/greeting.js"></script>
+<script src="js/greeting.js" crossorigin="anonymous"></script>
 </html>
