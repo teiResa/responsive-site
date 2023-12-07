@@ -106,7 +106,10 @@
   /*Everything in here was to get the background to fade without effecting anything else.*/
   content: "";
   background-image: url(https://teiresa.github.io/responsive-site/strap/fruitstand/assets/img/bg-happy.jpg);
-  opacity: .3;
+  /* confirm these changes. Does it actually look better? Sin non, remove these and put opacity uncommented. */
+  background-blend-mode: lighten;
+  background-color: rgba(211, 211, 211, 0.79);
+  /*opacity: .3;   */
   position:absolute;
   top:0;
   bottom:0;
