@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!--
+  content="width=device-width, initial-scale=1, shrink-to-fit=no" 
+ -->
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <title>Theresa's Dashy</title>
+
+        
+        <link href="css/dashy.css" rel="stylesheet" />
+
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section class="layout">
+  <div class="socials">FIRST (socials)
+   <section class="layout">
+    <section>
+     <div>BiliBili <i class="fa-brands fa-bilibili"></i> <br>
+      <div class="social-specs">
+       <iframe height="290px" width="310px" frameborder="0"  src="https://teiresa.github.io/responsive-site/strap/bilibili/subs/mia_api.html"></iframe>
+      </div>
+      
+      
+     </div>
+    <div>YouTube <i class="fa-brands fa-youtube"></i> <br>
+     <div class="social-specs">
+     <iframe height="90px" width="290px" frameborder="0" src="https://socialcounts.org/youtube-live-subscriber-count/UCYk3T4ZskjEJ3VLMyhWK6yg/embed?counter=0" allowFullScreen></iframe> <br>
+     <iframe height="90px" width="290px" frameborder="0" src="https://socialcounts.org/youtube-live-subscriber-count/UCYk3T4ZskjEJ3VLMyhWK6yg/embed?counter=1" allowFullScreen></iframe>
+    </div></div>
+    <!-- just add more divs-->
+   </section>
+    
+  </section>
+  </div>
+  <div class="frequent-sites">SECOND(frequent sites)
+   <section>
+    <div><a href="https://teiresa.gitlab.io/blog01/"> Blog01</a></div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+   </section>
+  </div>
+  <div class="profiles">THIRD (profiles)
+   <div><a href="https://github.com/teiResa">github <i class="fa-brands fa-github-alt"></i></a> </div>
+    <div><a href="https://gitlab.com/teiResa">gitlab <i class="fa-brands fa-gitlab"></i></a></div>
+    <div><a href="https://www.freecodecamp.org/teiresa">FreeCodeCamp <i class="fa-brands fa-free-code-camp"></i></a></div>
+    <div>Stack Overflow <i class="fa-brands fa-stack-overflow"></i></div>
+    <div><a href="https://www.freecodecamp.org/teiresa">FCC Forum <i class="fa-brands fa-free-code-camp"></i></a></div>
+    <!-- just add more divs-->
+  </div>
+  <div class="today">FOURTH (TODAY)
+   <section>
+    <div>1
+     <p id="timehere">TIME HERE</p>
+     <p id="datehere" title="日 (rì) instead of 号 (hào) for formal mode.">DATE HERE</p>
+     
+    </div>
+    <div>2</div>
+    <div> AQI: 
+     <script  type="text/javascript"  charset="utf-8">  
+      (function  (w,  d,  t,  f)  {  
+       w[f]  =  w[f]  ||  function  (c,  k,  n)  {  
+        s  =  w[f],  k  =  s['k']  =  (s['k']  ||  (k  ?  ('&k='  +  k)  :  ''));  s['c']  =  
+         c  =  (c  instanceof  Array)  ?  c  :  [c];  s['n']  =  n  =  n  ||  0;  L  =  d.createElement(t),  e  =  d.getElementsByTagName(t)[0];  
+        L.async  =  1;  L.src  =  '//feed.aqicn.org/feed/'  +  (c[n].city)  +  '/'  +  (c[n].lang  ||  '')  +  '/feed.v1.js?n='  +  n  +  k;  
+        e.parentNode.insertBefore(L,  e);  
+       };  
+      })(window,  document,  'script',  '_aqiFeed');    
+     </script>
+
+     <span  id="city-aqi-container">AQI READING</span>
+     <!--  Want this to look better?  go to https://aqicn.org/faq/2015-07-28/air-quality-widget-new-improved-feed/  section D-->
+  
+     <script  type="text/javascript"  charset="utf-8">  
+      _aqiFeed({ display:"<div style='%style;max-width:180px;text-align:center;'><small>%cityname</small> <div style='font-size:80px;height:60px;padding-top:3px; padding-bottom: 20px;'>%aqiv</div> %impact</div>", container:  "city-aqi-container",  city:  "hangzhou", lang: "en" });  
+     </script>
+   </section>
+  </div>
+</section>
+
+
+<script src="js/dashy.js"></script>
+<!-- fontawesome kit-->
+<script src="https://kit.fontawesome.com/b9730a3ea0.js" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+</html>
