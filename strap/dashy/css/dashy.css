@@ -1,3 +1,8 @@
+body {
+ font-family: 'Bubblegum Sans', cursive;
+  color: #3b1744;
+}
+
 .layout {
  width: 1366px;
  width: 100vw;
@@ -38,11 +43,13 @@
  justify-content: center;
  align-items: center;
 
+ /*
  background-image: url("https://teiresa.github.io/responsive-site/img/teiResa_head10.PNG");
  background-size: contain;
  background-blend-mode: soft-light;
  background-repeat: repeat;
  background-color: rgba(98, 92, 105, 0.171);
+ */
 }
 
 .profiles i {
@@ -156,4 +163,88 @@
  border: 2px grey outset;
  margin: 6px;
  font-size: x-large;
+}
+
+
+@media screen AND (min-height: 1200px) {
+ body {
+  background-image: url(/strap/dashy/assets/portrait_ytbb_painting.jpg) ;
+  background-position: center;
+  background-size: cover;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+ }
+ 
+ .socials #bilibili-iframe {
+  height: 350px;
+  width: 280px;
+ }
+
+ .today {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ .today #timehere {
+  font-size: 8rem;
+  font-weight: 800;
+  margin-left: 1px;
+  font-family: 'Bubblegum Sans', cursive;
+  color: #3b1744;
+ }
+
+ .today #datehere {
+  font-size: 3rem;
+  margin-left: -2vw;
+ }
+
+ .today #aqi-div {
+  align-self: center;
+  margin: 30px 200px;
+ }
+
+ .profiles i {
+  font-size: xxx-large;
+  color: #5b1e6a;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px lightblue;
+ }
+
+ 
+.frequent-sites {
+ height: auto;
+ display: flex;
+ flex-direction: row;
+ 
+}
+
+.frequent-sites section {
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ flex-wrap: wrap;
+}
+
+.frequent-sites a {
+ background-color: #3b1744;
+ color: #c08ecd;
+ padding: 3px 13px;
+ border-radius: 10px;
+ border: lightblue 3px inset;
+}
+
+.frequent-sites section div {
+ border: 2px #5b1e6a00 outset;
+ margin: 6px;
+ font-size: x-large;
+}
+
+
+
+.socials, .profiles, .today, .frequent-sites {
+ background-color: rgba(240, 248, 255, 0);
+}
 }
