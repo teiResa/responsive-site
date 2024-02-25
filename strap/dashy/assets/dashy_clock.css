@@ -1,0 +1,22 @@
+body {
+ font-family: 'Bubblegum Sans', cursive;
+  color: mediumslateblue;
+}
+
+.today{
+ width: 100vw;
+ height: 90vh;
+ left: -4px;
+ background-color: darkolivegreen;
+ display: flex;
+ align-content: center;
+ justify-content: center;
+ align-items: center;
+}
+
+#timehere {
+ font-size: xxx-large;
+ font-weight: bolder;
+ font-size: 7rem;
+ text-shadow: 0 0 50px white;
+}

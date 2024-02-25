@@ -6,6 +6,17 @@ window.onload = function(){
     var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
     var date = (today.getMonth()+1)+'月 (yuè) '+today.getDate() + '日 (rì)';
     // today.getFullYear()+' 年 (nián) -'+
+
+    function update(t) {
+     today.getHours 
+     if (t < 10) {
+     return"0" + t;
+     }
+     else {
+     return t;
+     }
+    }
+
     var time = today.getHours()+':'+today.getMinutes()+':'+today.getSeconds();
     // var dateTime = date+' '+time;
     
