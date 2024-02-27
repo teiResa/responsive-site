@@ -1,13 +1,15 @@
 body {
  font-family: 'Bubblegum Sans', cursive;
   color: mediumslateblue;
+
+  user-select: none;
 }
 
 .today{
  width: 100vw;
  height: 90vh;
  left: -4px;
- background-color: darkolivegreen;
+ background-color: rgb(116, 116, 115);
  display: flex;
  align-content: center;
  justify-content: center;
@@ -17,7 +19,7 @@ body {
 #timehere {
  font-size: xxx-large;
  font-weight: bolder;
- font-size: 7rem;
+ font-size: 9rem;
  text-shadow: 0 0 50px white;
 }
 
@@ -28,8 +30,18 @@ body {
 
 
 @media screen AND (max-width: 1200px)
-@media screen AND (min-width: 1200px) {
 
-}
 
 */
+
+
+@media screen AND (min-width: 1200px) {
+
+ #timehere {
+  font-size: xxx-large;
+  font-weight: 900;
+  font-size: 21rem;
+  text-shadow: 0 0 50px white;
+ }
+
+}
